@@ -234,7 +234,7 @@ class EpsonPrinter:
         byte_array = [
             ESC,
             87,    # W
-            46,    # xL
+            0,    # xL
             0,     # xH
             0,     # yL
             0,     # yH
