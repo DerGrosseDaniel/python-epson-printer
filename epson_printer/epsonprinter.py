@@ -111,6 +111,7 @@ class PrintableImage:
         # Thermal paper is 512 pixels wide
         if w > 512:
             ratio = 512. / w
+            w = 512
             h = int(h * ratio)
             image = image.resize((512, h), Image.ANTIALIAS)
         if image.mode != '1':
